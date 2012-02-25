@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B18CB2514DA08E500235F1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18CB2414DA08E500235F1A /* UIKit.framework */; };
+		1B18CB2714DA08E500235F1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18CB2614DA08E500235F1A /* Foundation.framework */; };
+		1B18CB2914DA08E500235F1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18CB2814DA08E500235F1A /* CoreGraphics.framework */; };
+		1B18CB2F14DA08E500235F1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B18CB2D14DA08E500235F1A /* InfoPlist.strings */; };
+		1B18CB3114DA08E500235F1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB3014DA08E500235F1A /* main.m */; };
+		1B18CB3514DA08E500235F1A /* WKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB3414DA08E500235F1A /* WKAppDelegate.m */; };
+		1B18CB3814DA08E500235F1A /* WKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB3714DA08E500235F1A /* WKViewController.m */; };
+		1B18CB3B14DA08E600235F1A /* WKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B18CB3914DA08E600235F1A /* WKViewController.xib */; };
+		1B18CB5914DA08FD00235F1A /* CharacterProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4414DA08FD00235F1A /* CharacterProperties.m */; };
+		1B18CB5A14DA08FD00235F1A /* CompoundFileBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4614DA08FD00235F1A /* CompoundFileBinary.m */; };
+		1B18CB5B14DA08FD00235F1A /* DocumentProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4814DA08FD00235F1A /* DocumentProperties.m */; };
+		1B18CB5C14DA08FD00235F1A /* FileInformationBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4A14DA08FD00235F1A /* FileInformationBlock.m */; };
+		1B18CB5D14DA08FD00235F1A /* FontTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4C14DA08FD00235F1A /* FontTable.m */; };
+		1B18CB5E14DA08FD00235F1A /* FormattedDiskPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB4E14DA08FD00235F1A /* FormattedDiskPage.m */; };
+		1B18CB5F14DA08FD00235F1A /* ParagraphProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB5014DA08FD00235F1A /* ParagraphProperties.m */; };
+		1B18CB6014DA08FD00235F1A /* SummaryInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB5214DA08FD00235F1A /* SummaryInformation.m */; };
+		1B18CB6114DA08FD00235F1A /* TableStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB5414DA08FD00235F1A /* TableStream.m */; };
+		1B18CB6214DA08FD00235F1A /* OFDataBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB5614DA08FD00235F1A /* OFDataBuffer.m */; };
+		1B18CB6314DA08FD00235F1A /* WKDocWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B18CB5814DA08FD00235F1A /* WKDocWriter.m */; };
+		1B18CB6614DA0B3700235F1A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18CB6514DA0B3700235F1A /* CoreText.framework */; };
+		1BB480AE14DA128200963145 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1BB480AD14DA128200963145 /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B18CB2014DA08E500235F1A /* WKDocWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKDocWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B18CB2414DA08E500235F1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1B18CB2614DA08E500235F1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B18CB2814DA08E500235F1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B18CB2C14DA08E500235F1A /* WKDocWriter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WKDocWriter-Info.plist"; sourceTree = "<group>"; };
+		1B18CB2E14DA08E500235F1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B18CB3014DA08E500235F1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B18CB3214DA08E500235F1A /* WKDocWriter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKDocWriter-Prefix.pch"; sourceTree = "<group>"; };
+		1B18CB3314DA08E500235F1A /* WKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKAppDelegate.h; sourceTree = "<group>"; };
+		1B18CB3414DA08E500235F1A /* WKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKAppDelegate.m; sourceTree = "<group>"; };
+		1B18CB3614DA08E500235F1A /* WKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKViewController.h; sourceTree = "<group>"; };
+		1B18CB3714DA08E500235F1A /* WKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKViewController.m; sourceTree = "<group>"; };
+		1B18CB3A14DA08E600235F1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WKViewController.xib; sourceTree = "<group>"; };
+		1B18CB4314DA08FD00235F1A /* CharacterProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterProperties.h; sourceTree = "<group>"; };
+		1B18CB4414DA08FD00235F1A /* CharacterProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterProperties.m; sourceTree = "<group>"; };
+		1B18CB4514DA08FD00235F1A /* CompoundFileBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundFileBinary.h; sourceTree = "<group>"; };
+		1B18CB4614DA08FD00235F1A /* CompoundFileBinary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundFileBinary.m; sourceTree = "<group>"; };
+		1B18CB4714DA08FD00235F1A /* DocumentProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentProperties.h; sourceTree = "<group>"; };
+		1B18CB4814DA08FD00235F1A /* DocumentProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentProperties.m; sourceTree = "<group>"; };
+		1B18CB4914DA08FD00235F1A /* FileInformationBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInformationBlock.h; sourceTree = "<group>"; };
+		1B18CB4A14DA08FD00235F1A /* FileInformationBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInformationBlock.m; sourceTree = "<group>"; };
+		1B18CB4B14DA08FD00235F1A /* FontTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontTable.h; sourceTree = "<group>"; };
+		1B18CB4C14DA08FD00235F1A /* FontTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontTable.m; sourceTree = "<group>"; };
+		1B18CB4D14DA08FD00235F1A /* FormattedDiskPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormattedDiskPage.h; sourceTree = "<group>"; };
+		1B18CB4E14DA08FD00235F1A /* FormattedDiskPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormattedDiskPage.m; sourceTree = "<group>"; };
+		1B18CB4F14DA08FD00235F1A /* ParagraphProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParagraphProperties.h; sourceTree = "<group>"; };
+		1B18CB5014DA08FD00235F1A /* ParagraphProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParagraphProperties.m; sourceTree = "<group>"; };
+		1B18CB5114DA08FD00235F1A /* SummaryInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryInformation.h; sourceTree = "<group>"; };
+		1B18CB5214DA08FD00235F1A /* SummaryInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryInformation.m; sourceTree = "<group>"; };
+		1B18CB5314DA08FD00235F1A /* TableStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableStream.h; sourceTree = "<group>"; };
+		1B18CB5414DA08FD00235F1A /* TableStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableStream.m; sourceTree = "<group>"; };
+		1B18CB5514DA08FD00235F1A /* OFDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFDataBuffer.h; sourceTree = "<group>"; };
+		1B18CB5614DA08FD00235F1A /* OFDataBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFDataBuffer.m; sourceTree = "<group>"; };
+		1B18CB5714DA08FD00235F1A /* WKDocWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDocWriter.h; sourceTree = "<group>"; };
+		1B18CB5814DA08FD00235F1A /* WKDocWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDocWriter.m; sourceTree = "<group>"; };
+		1B18CB6414DA092900235F1A /* WKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKUtilities.h; sourceTree = "<group>"; };
+		1B18CB6514DA0B3700235F1A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1BB480AD14DA128200963145 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B18CB1D14DA08E500235F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18CB6614DA0B3700235F1A /* CoreText.framework in Frameworks */,
+				1B18CB2514DA08E500235F1A /* UIKit.framework in Frameworks */,
+				1B18CB2714DA08E500235F1A /* Foundation.framework in Frameworks */,
+				1B18CB2914DA08E500235F1A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B18CB1514DA08E500235F1A = {
+			isa = PBXGroup;
+			children = (
+				1B18CB2A14DA08E500235F1A /* WKDocWriter */,
+				1B18CB2314DA08E500235F1A /* Frameworks */,
+				1B18CB2114DA08E500235F1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B18CB2114DA08E500235F1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB2014DA08E500235F1A /* WKDocWriter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B18CB2314DA08E500235F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB6514DA0B3700235F1A /* CoreText.framework */,
+				1B18CB2414DA08E500235F1A /* UIKit.framework */,
+				1B18CB2614DA08E500235F1A /* Foundation.framework */,
+				1B18CB2814DA08E500235F1A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B18CB2A14DA08E500235F1A /* WKDocWriter */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB4114DA08FD00235F1A /* Source */,
+				1B18CB3314DA08E500235F1A /* WKAppDelegate.h */,
+				1B18CB3414DA08E500235F1A /* WKAppDelegate.m */,
+				1B18CB3614DA08E500235F1A /* WKViewController.h */,
+				1B18CB3714DA08E500235F1A /* WKViewController.m */,
+				1B18CB3914DA08E600235F1A /* WKViewController.xib */,
+				1BB480AD14DA128200963145 /* README */,
+				1B18CB2B14DA08E500235F1A /* Supporting Files */,
+			);
+			path = WKDocWriter;
+			sourceTree = "<group>";
+		};
+		1B18CB2B14DA08E500235F1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB2C14DA08E500235F1A /* WKDocWriter-Info.plist */,
+				1B18CB2D14DA08E500235F1A /* InfoPlist.strings */,
+				1B18CB3014DA08E500235F1A /* main.m */,
+				1B18CB3214DA08E500235F1A /* WKDocWriter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B18CB4114DA08FD00235F1A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB4214DA08FD00235F1A /* File parts */,
+				1B18CB5514DA08FD00235F1A /* OFDataBuffer.h */,
+				1B18CB5614DA08FD00235F1A /* OFDataBuffer.m */,
+				1B18CB5714DA08FD00235F1A /* WKDocWriter.h */,
+				1B18CB5814DA08FD00235F1A /* WKDocWriter.m */,
+				1B18CB6414DA092900235F1A /* WKUtilities.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1B18CB4214DA08FD00235F1A /* File parts */ = {
+			isa = PBXGroup;
+			children = (
+				1B18CB4314DA08FD00235F1A /* CharacterProperties.h */,
+				1B18CB4414DA08FD00235F1A /* CharacterProperties.m */,
+				1B18CB4514DA08FD00235F1A /* CompoundFileBinary.h */,
+				1B18CB4614DA08FD00235F1A /* CompoundFileBinary.m */,
+				1B18CB4714DA08FD00235F1A /* DocumentProperties.h */,
+				1B18CB4814DA08FD00235F1A /* DocumentProperties.m */,
+				1B18CB4914DA08FD00235F1A /* FileInformationBlock.h */,
+				1B18CB4A14DA08FD00235F1A /* FileInformationBlock.m */,
+				1B18CB4B14DA08FD00235F1A /* FontTable.h */,
+				1B18CB4C14DA08FD00235F1A /* FontTable.m */,
+				1B18CB4D14DA08FD00235F1A /* FormattedDiskPage.h */,
+				1B18CB4E14DA08FD00235F1A /* FormattedDiskPage.m */,
+				1B18CB4F14DA08FD00235F1A /* ParagraphProperties.h */,
+				1B18CB5014DA08FD00235F1A /* ParagraphProperties.m */,
+				1B18CB5114DA08FD00235F1A /* SummaryInformation.h */,
+				1B18CB5214DA08FD00235F1A /* SummaryInformation.m */,
+				1B18CB5314DA08FD00235F1A /* TableStream.h */,
+				1B18CB5414DA08FD00235F1A /* TableStream.m */,
+			);
+			path = "File parts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B18CB1F14DA08E500235F1A /* WKDocWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B18CB3E14DA08E600235F1A /* Build configuration list for PBXNativeTarget "WKDocWriter" */;
+			buildPhases = (
+				1B18CB1C14DA08E500235F1A /* Sources */,
+				1B18CB1D14DA08E500235F1A /* Frameworks */,
+				1B18CB1E14DA08E500235F1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKDocWriter;
+			productName = WKDocWriter;
+			productReference = 1B18CB2014DA08E500235F1A /* WKDocWriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B18CB1714DA08E500235F1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1B18CB1A14DA08E500235F1A /* Build configuration list for PBXProject "WKDocWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1B18CB1514DA08E500235F1A;
+			productRefGroup = 1B18CB2114DA08E500235F1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B18CB1F14DA08E500235F1A /* WKDocWriter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B18CB1E14DA08E500235F1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18CB2F14DA08E500235F1A /* InfoPlist.strings in Resources */,
+				1B18CB3B14DA08E600235F1A /* WKViewController.xib in Resources */,
+				1BB480AE14DA128200963145 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B18CB1C14DA08E500235F1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B18CB3114DA08E500235F1A /* main.m in Sources */,
+				1B18CB3514DA08E500235F1A /* WKAppDelegate.m in Sources */,
+				1B18CB3814DA08E500235F1A /* WKViewController.m in Sources */,
+				1B18CB5914DA08FD00235F1A /* CharacterProperties.m in Sources */,
+				1B18CB5A14DA08FD00235F1A /* CompoundFileBinary.m in Sources */,
+				1B18CB5B14DA08FD00235F1A /* DocumentProperties.m in Sources */,
+				1B18CB5C14DA08FD00235F1A /* FileInformationBlock.m in Sources */,
+				1B18CB5D14DA08FD00235F1A /* FontTable.m in Sources */,
+				1B18CB5E14DA08FD00235F1A /* FormattedDiskPage.m in Sources */,
+				1B18CB5F14DA08FD00235F1A /* ParagraphProperties.m in Sources */,
+				1B18CB6014DA08FD00235F1A /* SummaryInformation.m in Sources */,
+				1B18CB6114DA08FD00235F1A /* TableStream.m in Sources */,
+				1B18CB6214DA08FD00235F1A /* OFDataBuffer.m in Sources */,
+				1B18CB6314DA08FD00235F1A /* WKDocWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B18CB2D14DA08E500235F1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B18CB2E14DA08E500235F1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B18CB3914DA08E600235F1A /* WKViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B18CB3A14DA08E600235F1A /* en */,
+			);
+			name = WKViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B18CB3C14DA08E600235F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B18CB3D14DA08E600235F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B18CB3F14DA08E600235F1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKDocWriter/WKDocWriter-Prefix.pch";
+				INFOPLIST_FILE = "WKDocWriter/WKDocWriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B18CB4014DA08E600235F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKDocWriter/WKDocWriter-Prefix.pch";
+				INFOPLIST_FILE = "WKDocWriter/WKDocWriter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B18CB1A14DA08E500235F1A /* Build configuration list for PBXProject "WKDocWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B18CB3C14DA08E600235F1A /* Debug */,
+				1B18CB3D14DA08E600235F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B18CB3E14DA08E600235F1A /* Build configuration list for PBXNativeTarget "WKDocWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B18CB3F14DA08E600235F1A /* Debug */,
+				1B18CB4014DA08E600235F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B18CB1714DA08E500235F1A /* Project object */;
+}
