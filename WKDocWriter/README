@@ -1,0 +1,18 @@
+WKDocWriter is a class for saving NSAttributedStrings as Microsoft Word files on iOS.
+
+Supports:
+ - Bold/Italic/Underline
+ - Font and font size
+ - Alignment
+ - Line Spacing
+ - Indention
+
+May support in the future:
+ - Stylesheet
+ - Document Properties
+
+Known issues:
+ - Document preview does not appear in Quicklook
+ - Appkit's NSAttributedString does not read the file properly. (Pages and Word work fine.)
+ - Text is limited to ~53,000 characters (due to File Allocation Table assuming only one 512-byte sector).
+ - Formatting is not written as efficiently as it could be.
